@@ -3,7 +3,7 @@ function play(index) {
 	alert("The setting is WWII. Choose a soldier, weapon, and battlefield.");
 };
 
-/////////////
+///////////////////////////////////////
 
 function Soldier(name, side) {
 	this.name = name;
@@ -21,15 +21,11 @@ function Weapon(type, size, damage) {
 	this.type = type || "fists";
 	this.size = size;
 	this.damage = damage;
-	this.fire = function(target) {
+	this.fire = function(soldier) {
 		console.log("Bam!");
 		// alert("fire away!");
-			target.life = (target.life - this.damage);
-		}
-	};
-	this.addWeatherDamage = function(weather) {
-		if (this.damage <= 0) {
-			console.log("useless");
+			soldier.life = (soldier.life - this.damage);
+			soldier.addDamage(this);
 		}
 	};
 
@@ -37,11 +33,11 @@ function Weapon(type, size, damage) {
 function Battlefield(landType, weatherDamage) {
 	this.landType = landType;
 	this.weatherDamage = weatherDamage;
-	this.element = function(target) {
+	this.element = function(weapon) {
 		console.log("damage!");
-			target.damage = (target.damage - weatherDamage);
-	};
-}
+			weapon.damage = (weapon.damage - weatherDamage);
+	}
+};
 
 
 var joe = new Soldier("joe", "allies");
@@ -52,6 +48,7 @@ var tank = new Weapon("tank", "large", 40);
 var germany = new Battlefield("forest", 5);
 var france = new Battlefield("beach", 10);
 var egypt= new Battlefield("desert", 15);
+
 
  
 
