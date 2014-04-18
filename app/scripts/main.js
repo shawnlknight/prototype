@@ -7,7 +7,7 @@ function Soldier(name, side) {
 Soldier.prototype.addDamage = function(weapon) {
 	if (this.life <= 0) {
 	console.log("dead");
-	alert(this.name + " is dead. Game over!");
+	alert(this.name + " is terminated. Game over!");
 	}
 }
 
@@ -20,7 +20,6 @@ function Weapon(type, size, damage) {
 
 Weapon.prototype.fire = function(soldier) {
 	console.log("Bam!");
-	// alert("fire away!");
 	soldier.life = (soldier.life - this.damage);
 	soldier.addDamage(this);
 }	
