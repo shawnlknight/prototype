@@ -33,28 +33,37 @@
             </div>
 
             <div class="jumbotron">
-                <h1>WWII</h1>
+                <h1>WWII GAME</h1>
                 <!-- <p class="lead">What to do????</p> -->
-                <button onClick="play(0);">PRESS TO START</button>
+                <button class="play">PRESS TO START</button>
+                <h4>Select a Weapon</h4>
+                <button class="firearm"></button>
+                <h4>Select a Battlefield</h4>
+                <button class="field"></button>
+                <h4>Select a Soldier</h4>
+                <button class="person"></button>
 
+
+<!-- 
                 <h3>Soldier</h3>
-                <select class="form-control">
+                <select class="soldierSelect">
                   <option>Joe</option>
                   <option>Hanz</option>
                 </select>
                 <h3>Weapon</h3>
-                <select class="form-control">
+                <select class="weaponSelect">
                   <option>Pistol</option>
                   <option>Grenade</option>
                   <option>Tank</option>
                 </select>
                 <h3>Battlefield</h3>
-                  <select class="form-control">
+                  <select class="battlefieldSelect">
                   <option>Germany</option>
                   <option>France</option>
                   <option>Egypt</option>
                 </select>
-                <!-- <p><a class="btn btn-lg btn-success" href="#">Start <span class="glyphicon glyphicon-ok"></span></a></p> -->
+                <p><a class="btn btn-lg btn-danger" href="#">Play</a></p>
+                <div class="attack"></div> -->
             </div>
 
             <div class="row marketing">
@@ -114,6 +123,7 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/data.js"></script>
+        <script src="scripts/game.js"></script>
         <!-- endbuild -->
 </body>
 </html>
