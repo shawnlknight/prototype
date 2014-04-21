@@ -70,10 +70,10 @@ if(field === "france") {
 			france.weatherDamage === 0;
 		if(soldier === "joe") {
 			grenade.fire(hanz);
-			$(".something").text("Hanz life " + hanz.life);
+			$(".something").text("Hanz's life " + hanz.life);
 			} else if(soldier === "hanz") {
 				grenade.fire(joe);
-				$(".something").text("Joe life " + joe.life);
+				$(".something").text("Joe's life " + joe.life);
 			}
 		}
 	}
