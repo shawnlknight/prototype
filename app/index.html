@@ -15,53 +15,77 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 10]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+        <div class="header">
+
+            <h3 class="text-muted">prototype</h3>
+        </div>
+
+        <div class="jumbotron">
+            <h1>WWII GAME</h1>
+            <p>Each soldier starts off with 100% life. Choose a battlefield, a weapon, and a soldier. Press 'play' to fire upon your opponent.</p>
+            <form>
+            <h3>Battlefields</h3>
+            <select class="fieldSelect">
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            </select>
+            <h3>Weapons</h3>
+            <select class="weaponSelect">
+            <option value="pistol">Pistol</option>
+            <option value="grenade">Granade</option>
+            </select>
+            <h3>Soldiers</h3>
+            <select class="soldierSelect">
+            <option value="joe">Joe</option>
+            <option value="hanz">Hanz</option>
+            </select>
 
 
-        <div class="container">
-            <div class="header">
-
-                <h3 class="text-muted">prototype</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>WWII GAME</h1>
-                <p>Each soldier starts off with 100% life. Choose a battlefield then fire upon your victim.</p>
-                <h3>Battlefields</h3>
-                <button class="b1">Germany</button>
-                <button class="b2">France</button>
-                
-                <h3>Shoot your victim</h3>
-                <button class="b3">Joe</button>
-                <button class="b4">Hanz</button>
-                <h4>Joe's Life %</h4>
-                <div class="joeLife"></div>
-                <h4>Hanz's Life %</h4>
-                <div class="hanzLife"></div>
-               
-
-<!-- 
-                <p><a class="btn btn-lg btn-danger" href="#">Play</a></p>
-                <div class="attack"></div> -->
-            </div>
-
-            <div class="row marketing">
-                <div class="col-lg-6"> 
+            <p><input type="submit" class="btn btn-lg btn-danger" value="play"></p>
+            </form>
+            <h4>Opponent Life %</h4>
+            <div class="something"></div>
 
 
 
-                </div>
-            </div>
 
-            <div class="footer">
-                <!-- <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
-            </div>
+
+
+         <!--    <button class="b1">Germany</button>
+            <button class="b2">France</button> -->
+            
+          <!--   <h3>Shoot your victim</h3>
+            <button class="b3">Joe</button>
+            <button class="b4">Hanz</button>
+            <h4>Joe's Life %</h4>
+            <div class="joeLife"></div>
+            <h4>Hanz's Life %</h4>
+            <div class="hanzLife"></div> -->
+           
+
 
         </div>
+
+        <div class="row marketing">
+            <div class="col-lg-6"> 
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <!-- <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p> -->
+        </div>
+
+    </div>
 
 
         <!-- build:js scripts/vendor.js -->
@@ -98,7 +122,6 @@
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/data.js"></script>
-        <script src="scripts/game.js"></script>
         <!-- endbuild -->
 </body>
 </html>
